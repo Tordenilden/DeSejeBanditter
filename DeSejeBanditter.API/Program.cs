@@ -14,6 +14,10 @@ namespace DeSejeBanditter.API
     /// 2) Models i DAL
     /// 3) Interfaces i DAL
     /// 4) Classes til at håndtere data adgang (her er der en del kode)
+    /// 
+    /// 5) DI skal registreres
+    /// 6) Controller skal genereres (virker sikkert ikke første gang)
+    /// 7) Method skal kodes i Controller
     /// </summary>
     public class Program
     {

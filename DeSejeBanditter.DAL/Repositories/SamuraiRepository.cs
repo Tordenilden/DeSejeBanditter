@@ -24,15 +24,15 @@ namespace DeSejeBanditter.DAL.Repositories
         public List<Samurai> GetSamurais()
         {
             return context.Samurai.ToList();
-
-            //context.Samurai.FirstOrDefault((x) => x.SamuraiId == 1);
-            //Samurai s = new Samurai();
-            //s.Name = "hansi";
-            //string name = s.Name;
-            //DatabaseContext context = new DatabaseContext();
-            //context.Samurai.LINQ
-
-            //throw new NotImplementedException();
         }
     }
 }
+
+//context.Samurai.FirstOrDefault((x) => x.SamuraiId == 1);
+//Samurai s = new Samurai();
+//s.Name = "hansi";
+//string name = s.Name;
+//DatabaseContext context = new DatabaseContext();
+//context.Samurai.LINQ
+
+//throw new NotImplementedException();
