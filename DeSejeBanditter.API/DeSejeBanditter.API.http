@@ -1,0 +1,6 @@
+@DeSejeBanditter.API_HostAddress = http://localhost:5255
+
+GET {{DeSejeBanditter.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

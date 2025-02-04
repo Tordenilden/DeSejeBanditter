@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeSejeBanditter.API", "DeSejeBanditter.API\DeSejeBanditter.API.csproj", "{F9B89D1C-796A-4CD0-9594-281225E00651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeSejeBanditter.DAL", "DeSejeBanditter.DAL\DeSejeBanditter.DAL.csproj", "{6086F967-87FA-4BF2-8405-A15C06CD9DCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9B89D1C-796A-4CD0-9594-281225E00651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B89D1C-796A-4CD0-9594-281225E00651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B89D1C-796A-4CD0-9594-281225E00651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B89D1C-796A-4CD0-9594-281225E00651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6086F967-87FA-4BF2-8405-A15C06CD9DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6086F967-87FA-4BF2-8405-A15C06CD9DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6086F967-87FA-4BF2-8405-A15C06CD9DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6086F967-87FA-4BF2-8405-A15C06CD9DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB675718-1BEF-45CC-A96A-547E352974DD}
+	EndGlobalSection
+EndGlobal
