@@ -1,5 +1,7 @@
 
+using DeSejeBanditter.DAL.Interfaces;
 using DeSejeBanditter.DAL.Models;
+using DeSejeBanditter.DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace DeSejeBanditter.API
@@ -31,10 +33,11 @@ namespace DeSejeBanditter.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 
-            string conStr = @"Server=TEC-8220-LA0025;Database=OnsdagH2; 
+            string conStr = @"Server=TEC-8220-LA0025;Database=OnsdagH2;
             Trusted_Connection=true; Trust Server Certificate=true; Integrated Security=true; Encrypt=True; ";
             builder.Services.AddDbContext<DatabaseContext>(obj => obj.UseSqlServer(conStr));
-
+            //builder.Services.AddDbContext<DatabaseContext>(obj => obj.MySQL(conStr));
+            builder.Services.AddScoped<ISamurai, SamuraiRepository>();
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

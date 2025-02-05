@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +15,12 @@ namespace DeSejeBanditter.DAL.Models
     /// </summary>
     public class Samurai // Type
     {
+        //[Key()] // PK
         public int SamuraiId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        // 1 - 1 choose which Model that has the FK 
+        public int HouseId { get; set; } // FK
+        public House House { get; set; } // Navigation property - den kommer ikke ned i DB
     }
 }

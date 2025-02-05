@@ -21,6 +21,10 @@ namespace DeSejeBanditter.DAL.Models
             
         }
         public DbSet<Samurai> Samurai { get; set; } // this is a table, named Samurai, PK SamuraiId
+        public DbSet<House> House { get; set; }
+        // 1) create Model
+        // 2) if there is a Relation (kig i House) create it
+        // 3) create a DbSet<ModelName>
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -11,5 +11,7 @@ namespace DeSejeBanditter.DAL.Interfaces
     {
         // return all samurais
         public List<Samurai> GetSamurais();
+        //public Task List<Samurai> GetSamuraisAndHouse();
+        public List<Samurai> GetSamuraisAndHouse();
     }
 }

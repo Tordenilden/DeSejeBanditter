@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DeSejeBanditter.DAL.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20250204080630_onsdagStart")]
-    partial class onsdagStart
+    [Migration("20250205071733_onsdag2")]
+    partial class onsdag2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,23 @@ namespace DeSejeBanditter.DAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("DeSejeBanditter.DAL.Models.House", b =>
+                {
+                    b.Property<int>("HouseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HouseId"));
+
+                    b.Property<string>("Adress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HouseId");
+
+                    b.ToTable("House");
+                });
 
             modelBuilder.Entity("DeSejeBanditter.DAL.Models.Samurai", b =>
                 {

@@ -1,5 +1,6 @@
 ﻿using DeSejeBanditter.DAL.Interfaces;
 using DeSejeBanditter.DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,16 @@ namespace DeSejeBanditter.DAL.Repositories
         public List<Samurai> GetSamurais()
         {
             return context.Samurai.ToList();
+        }
+
+        public List<Samurai> GetSamuraisAndHouse()
+        {
+            var temp = context.Samurai.Include((samuraiObj)=> samuraiObj.House).ToList();
+            var temp2 = context.Samurai.Include((samuraiObj)=> samuraiObj.House).FirstOrDefaultAsync();
+            var temp3 = context.Samurai.Include((samuraiObj) => samuraiObj.House).Where((o) => o.SamuraiId == 222);
+            //var temp4 = context.House.Include((h)=>h.Adress).Include......
+
+            return null;
         }
     }
 }
